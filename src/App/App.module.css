@@ -1,0 +1,12 @@
+.content {
+	width: 80vw;
+	margin: 0 auto;
+}
+body {
+	background: #edeef0;
+}
+.sidebarProfile_row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}

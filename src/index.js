@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App/App';
+import store from './redux/reduxStore';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// dispatch={store.dispatch.bind(store)}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// store - это объект созданный redux`ом.
+// Ниже в <App/> мы передаём пропс метод dispatch предоставляемый(встроенный) redux`ом.
+let rerenderTree = () => {
+	ReactDOM.render(
+		<React.StrictMode>
+			<App store={store} />
+		</React.StrictMode>,
+		document.getElementById('root')
+	);
+};
+rerenderTree(store.getState());
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// здесь rerenderTree - это колбэк который отдаётся в файл стейта для вызова там при его изменении
+// Оборачиваем в анонимную функцию, чтобы запросить state и передать его параметром в функцию rerenderTree
+// Так как встроенный метод subscribe в redux не передаёт никаких параметров.
+store.subscribe(() => {
+	let state = store.getState();
+	rerenderTree(state);
+});

@@ -1,0 +1,17 @@
+.list {
+	width: 200px;
+}
+.list_item {
+	margin-bottom: 15px;
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+.active {
+	display: block;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}

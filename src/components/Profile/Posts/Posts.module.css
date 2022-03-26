@@ -1,0 +1,14 @@
+.posts_header {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.posts_input {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background: #edeef0;
+	font-size: inherit;
+	padding: 10px;
+}

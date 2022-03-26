@@ -1,0 +1,24 @@
+.success_btn {
+	margin: 0 auto;
+	cursor: pointer;
+	border: none;
+	display: block;
+	margin-bottom: 30px;
+	color: #fff;
+	text-align: center;
+	min-width: 175px;
+	padding: 8px 12px;
+	background: #3edf5b;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 22px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all 0.1s;
+}
+.success_btn:hover {
+	transition: all 0.1s;
+	top: 3px;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

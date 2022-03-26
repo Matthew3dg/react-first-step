@@ -1,0 +1,19 @@
+.avatar {
+	min-height: 80px;
+	min-width: 80px;
+	height: 80px;
+	width: 80px;
+	margin-right: 20px;
+}
+.avatar img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: 10% 30%;
+	border-radius: 50%;
+}
+.post {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}

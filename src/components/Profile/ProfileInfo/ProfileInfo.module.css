@@ -1,0 +1,27 @@
+.block_info {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 30px;
+}
+
+.avatar {
+	min-height: 150px;
+	min-width: 150px;
+	height: 150px;
+	width: 150px;
+	margin-right: 20px;
+}
+.avatar img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: 10% 30%;
+	border-radius: 5px;
+}
+.name {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.info {
+	margin-bottom: 10px;
+}

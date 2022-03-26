@@ -1,0 +1,36 @@
+.wrapper {
+	margin-left: 30px;
+	width: 100%;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+.header {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.dialogsRow {
+	display: flex;
+	flex-direction: row;
+}
+.dialogsList {
+	padding: 0;
+	margin: 0;
+	padding-right: 50px;
+	margin-right: 20px;
+	border-right: solid 3px #edeef0;
+}
+.messages {
+	display: flex;
+	flex-direction: column;
+}
+.messages_input {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background: #edeef0;
+	font-size: inherit;
+	padding: 10px;
+}
